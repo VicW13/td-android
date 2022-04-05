@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FBAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idMDPVerif"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/confirmer"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/idPassword"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/idNiveau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/averia_serif_libre_bold"
+        android:text="@string/niveau"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idDispo" />
+
+    <TextView
+        android:id="@+id/idCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/averia_serif_libre_bold"
+        android:text="@string/commentaires"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNiveau" />
+
+    <TextView
+        android:id="@+id/idPseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/averia_serif_libre_bold"
+        android:text="@string/pseudo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idMDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/averia_serif_libre_bold"
+        android:text="@string/mot_de_passe"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPseudo" />
+
+    <TextView
+        android:id="@+id/idVerifMDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/averia_serif_libre_bold"
+        android:text="@string/confirmer_le_mot_de_passe"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMDP" />
+
+    <TextView
+        android:id="@+id/idAssoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/averia_serif_libre_bold"
+        android:text="@string/association"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idVerifMDP" />
+
+    <TextView
+        android:id="@+id/idDispo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/averia_serif_libre_bold"
+        android:text="@string/disponibilit_s_pour_la_semaine"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idAssoc" />
+
+    <TextView
+        android:id="@+id/idInscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/comic_neue_light"
+        android:text="@string/inscriptions"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/champPseudo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/pseudonyme"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <Spinner
+        android:id="@+id/asso_spin"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/association"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/idMDPVerif"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <RadioGroup
+        android:id="@+id/idRadio"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/idDispo">
+
+
+        <CheckBox
+            android:id="@+id/idLundi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lundi"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <CheckBox
+            android:id="@+id/idMardi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/mardi"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        <CheckBox
+            android:id="@+id/idMercredi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/mercredi"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        <CheckBox
+            android:id="@+id/idJeudi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/jeudi"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        <CheckBox
+            android:id="@+id/idVendredi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/vendredi"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/idRadio2"
+        android:layout_width="333dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNiveau">
+
+        <RadioButton
+            android:id="@+id/idDebutant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_butant"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/idInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interm_diaire"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/idExpert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expert"
+            android:textColor="#000000"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/idComment"
+        android:layout_width="333dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/commentaires"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCom"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/idPassword"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/mot_de_passe"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/champPseudo"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
